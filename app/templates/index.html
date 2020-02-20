@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--slider-->
+<div id = "slides" class = "carousel slide" data-ride = "carousel">
+	<ul class = "carousel-indicators">
+		<li data-target = "#slides" data-slide-to="0" class = "active"></li>
+		<li data-target = "#slides" data-slide-to="1"></li>
+		<li data-target = "#slides" data-slide-to="2"></li>
+	</ul>
+	<div class = "carousel-inner">
+		<div class = "carousel-item active">
+			<img src = "{{ url_for('static', filename='images/slider2.jpg') }}">
+		</div>
+		<div class = "carousel-item">
+			<img src = "{{ url_for('static', filename='images/slider1.jpg') }}">
+		</div>
+		<div class = "carousel-item">
+			<img src = "{{ url_for('static', filename='images/slider3.jpg') }}">
+		</div>
+	</div>
+</div>
+
+<!--who are we-->
+<div class = "container-fluid padding">
+	<div class = "row bio text-center">
+		<div class = "col-12">
+			<h1 class = "display-3">Data Science Club of UWA</h1>
+		</div>
+		<hr>
+		<div class = "col-12">
+			<p class = "lead">Established in 2019, The Data Science Club of UWA is a SOC-affiliated club committed to 
+				creating a supportive internal support network among UWA Data Science students, 
+				and preparing them for the industry outside of university.</p>
+		</div>
+		<div class = "col-12">
+			<a href = "{{ url_for('about') }}">
+				<button type = "button" class = "btn btn-outline-secondary btn-lg">Further info.</button>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!--Data Science-->
+<div class = "container-fluid">
+	<div class = "row jumbotron align-items-center">
+		<div class = "col-xs-12 col-md-8">
+			<h1 class = "display-5">What is Data Science?</h1>
+			<p class = "lead">Data Science is not about making models, visualisations, nor writing code. 
+				These are all important, but ultimately just cogs moving a much bigger wheel. Data Science 
+				in a general sense is about <i>solving problems to maximise the impact of data</i>. This means 
+				transforming data into solutions such as useful insights, data products and product recommendations.</p>
+			<p class = "lead">With the emergence of big data over the last 2 decades, Data Science has found 
+				itself in high demand. Companies are collecting mass amounts of data (big data), from which they 
+				need to extrapolate meaningful information (data mining). Data mining on such a large scale requires 
+				computer science, and this integration - using computer science to perform data mining - is the 
+				formula that equates to data science.</p>
+		</div>
+		<div class = "col-xs-12 col-md-4">
+			<img src = "{{ url_for('static', filename='images/data_science.png') }}" class = "img-fluid">
+		</div>
+		<hr class = "dark">
+		<div class = "col-xs-12 col-md-8">
+			<h1 class = "display-5">What does a Data Scientist do?</h1>
+			<p class = "lead">Work within the field can be split distinctly into 6 major groups. At the most fundamental 
+				levels are <b>data collection, storage and transformation</b>. These work groups can entail tasks such as logging
+				and documenting user data and/or user generated content, creating infrastructures to store this data on, 
+				and cleaning and visualising data. Above this is <b>data aggregation</b>. In this group a data scientist may be
+				expected to analyse and draw insights from data, creating metrics to define and determine whether a product
+				is performing successfully, and A/B testing to compare the performance of 2 different products or strategies.
+				At the very highest and most complex tier of work within the field is <b>learning and optimisation</b>. This work 
+				group deals artificial intelligence and machine learning, fields set to change the world in an exciting and 
+				dramatic way.
+			</p>
+		</div>
+		<div class = "col-xs-12 col-md-4">
+			<img src = "{{ url_for('static', filename='images/ds_hierarchy.png') }}" class = "img-fluid">
+		</div>
+	</div>
+</div>
+
+<!--connect-->
+<div class = "container-fluid padding">
+	<div class = "row text-center padding">
+		<div class = "col-12">
+			<h1>Connect</h1>
+		</div>
+		<div class = "col-12 social padding">
+			<a href = "https://www.facebook.com/dsc.uwa"><i class = "fab fa-facebook"></i></a>
+			<a href = "https://www.linkedin.com/company/dscuwa/about"><i class = "fab fa-linkedin"></i></a>
+		</div>
+	</div>
+</div>
+<hr class = "dark">
+
+<!--sponsors-->
+<div class = "container-fluid padding">
+	<div class = "row text-center align-items-center padding">
+		<div class = "col-12">
+			<h1>Sponsors</h1>
+		</div>
+		<div class = "col-xs-12 col-sm-6 col-md-4">
+			<a href = "https://www.uwastudentguild.com/"><img src = "{{ url_for('static', filename='images/guild_logo.png') }}" class = "img-fluid sponsors"></a>
+		</div>
+		<div class = "col-xs-12 col-sm-6 col-md-4">
+			<a href = "https://visagio.com/en/"><img src = "{{ url_for('static', filename='images/visagio_logo.png') }}" class = "img-fluid sponsors"></a>
+		</div>
+		<div class = "col-xs-12 col-sm-6 col-md-4">
+			<a href = "https://www.riotinto.com/en"><img src = "{{ url_for('static', filename='images/riotinto_logo.png') }}" class = "img-fluid sponsors"></a>
+		</div>
+	</div>
+</div>
+{% endblock %}

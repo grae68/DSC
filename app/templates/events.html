@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class = "container-fluid padding">
+	<div class = "row welcome text-center align-items-center">
+        <div class = "col-12">
+			<h1 class = "display-3">Upcoming Events</h1>
+        </div>
+        <hr class = "dark">
+    </div>
+</div>
+
+<!--Data Science-->
+<div class = "container-fluid">
+	<div class = "row jumbotron align-items-center">
+		<div class = "col-12>
+			<h1 class = "display-5">For a complete list of upcoming events refer to the following link to our <a href = "https://www.facebook.com/">Facebook page</a></h1>
+		</div>
+	</div>
+</div>
+<!--
+<div class = "container-fluid padding">
+    <div class = "row padding">
+        <div class = "card">
+            <div class = "row padding">
+                <div class = "col-8 card-body">
+                    <h4 class = "card-title">Claire Heffernan (President)</h4>
+                    <p class = "card-text">2020 President of the Data Science Club of UWA. Claire is responsible
+                        for leading the team</p>
+                    <a href = "#" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+                <div class = "col-4">
+                    <img src = "{{ url_for('static', filename='images/data_science.png') }}" class = "card-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+{% endblock %}

@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--Who are we?-->
+<div class = "container-fluid">
+	<div class = "row align-items-center padding">
+        <div class = "col-12">
+			<h1 class = "display-3 text-center">Who are we?</h1>
+        </div>
+        <hr class = "dark">
+        <div class = "col-xs-12 col-xl-4 order-xl-last text-center">
+			<img src = "{{ url_for('static', filename='images/dumb.jpg') }}" class = "img-fluid">
+		</div>
+		<div class = "col-xs-12 col-xl-8">
+			<p class = "lead">Data science is more than just a buzzword. It is a rapidly growing multidisciplinary field that
+                offers opportunities and possibilities for advancement over a vast range of industries. In the
+                last few years the University of Western Australia (UWA) has opened its doors to students
+                interested in this exciting field of study by establishing its Data Science program.</p>
+			<p class = "lead">The founding members of the Data Science Club of UWA (DSC) team, Sam Hobson, May-Lyn Hu 
+                and Cesar Gonzalez, discovered during their studies that because data science was
+                a relatively new addition to UWA’s course offerings there was no unique space for students
+                like themselves to share their passion for this new discipline. A combination of statistics and
+                computer science studies, no other student club existed that focused on data science or
+                represented data science students. With the aim of developing a space for like-minded
+                students to connect with one other and industry professionals through their interest in data
+                and the technological advancements possible through this ever-evolving field, the Data
+                Science Club of UWA was formed in February 2019, before becoming SOC affiliated in
+                March 2019.</p>
+		</div>
+	</div>
+</div>
+
+<!--The Team-->
+<div class = "container-fluid padding">
+	<div class = "row welcome text-center align-items-center padding">
+        <div class = "col-12">
+			<h1 class = "display-3">Meet The Team</h1>
+        </div>
+        <hr class = "dark">
+    </div>
+</div>
+
+<div class = "container-fluid padding">
+    <div class = "row padding">
+        <div class ="col-md-4">
+            <div class = "card">
+                <img class = "card-img-top" src = "{{ url_for('static', filename='images/claire.jpg') }}">
+                <div class = "card-body">
+                    <h4 class = "card-title">Claire Heffernan</h4>
+                    <p class = "card-text">2020 President of the Data Science Club of UWA. Master of DS</p>
+                    <a href = "https://www.linkedin.com/in/claire-u-heffernan/" target="_blank" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-4">
+            <div class = "card">
+                <img class = "card-img-top" src = "{{ url_for('static', filename='images/johnny.jpg') }}">
+                <div class = "card-body">
+                    <h4 class = "card-title">Johnny Barrett</h4>
+                    <p class = "card-text">2020 Vice-President of the Data Science Club of UWA. Master of DS</p>
+                    <a href = "https://www.linkedin.com/in/johnbarrett-1/" target="_blank" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-4">
+            <div class = "card">
+                <img class = "card-img-top" src = "{{ url_for('static', filename='images/paul.jpg') }}">
+                <div class = "card-body">
+                    <h4 class = "card-title">Paul O'Sullivan</h4>
+                    <p class = "card-text">2020 OCM (Ordinary Committee Member) of the Data Science Club of UWA. Bachelor of Science, Computer Science and Data Science</p>
+                    <a href = "https://www.linkedin.com/in/paulaidanosullivan/" target="_blank" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-4">
+            <div class = "card">
+                <img class = "card-img-top" src = "{{ url_for('static', filename='images/alex.jpg') }}">
+                <div class = "card-body">
+                    <h4 class = "card-title">Alex Knott</h4>
+                    <p class = "card-text">2020 Secretary of the Data Science Club of UWA. Honours, Finance and Economics</p>
+                    <a href = "https://www.linkedin.com/in/alexanderknott/" target="_blank" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-4">
+            <div class = "card">
+                <img class = "card-img-top" src = "{{ url_for('static', filename='images/di.jpg') }}">
+                <div class = "card-body">
+                    <h4 class = "card-title">Di Yao</h4>
+                    <p class = "card-text">2020 Treasurer of the Data Science Club of UWA. Masters of DS</p>
+                    <a href = "https://www.linkedin.com/in/di-yao-4bba18104/" target="_blank" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-4">
+            <div class = "card">
+                <img class = "card-img-top" src = "{{ url_for('static', filename='images/grae.jpg') }}">
+                <div class = "card-body">
+                    <h4 class = "card-title">Grae Cumming</h4>
+                    <p class = "card-text">2020 Undergrad Rep of the Data Science Club of UWA. Bachelor of Science, Data Science and Management</p>
+                    <a href = "https://www.linkedin.com/in/grae-cumming-14821b157/" target="_blank" class = "btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Awards and Accolades-->
+<div class = "container-fluid padding">
+	<div class = "row welcome align-items-center padding">
+        <div class = "col-12 text-center">
+			<h1 class = "display-3">Awards and Accolades</h1>
+        </div>
+        <hr class = "dark">
+
+    <div class = "col-xs-12 col-xl-8">
+        <h1>Best New Club Award 2019</h1>
+        <p class = "lead">Each year, the Societies Council (SOC) of the UWA Student Guild 
+            provide an award for the best performing newly affilliated SOC club. Establishing 
+            a new club on campus is no easy feat, and this award is designed to bring 
+            recognition for those who not only find their footing, but display outstanding 
+            achievement right out of the gate.</p>
+        <p class = "lead">Through the hard work and dedication of May Hu and the newly formed
+            team, 2019 saw this award fall in the hands of the Data Science Club of UWA. Some 
+            of the criteria that deemed the club worthy of such an accolade included:
+        </p>
+        <ul>
+            <li class = "lead">Establishing a <b>strong presence</b> amongst the students, faculty 
+                and data science industry through various club events, with a strong
+                priority on networking
+            </li>
+            <li class = "lead">Creating a <b>sense of community</b> amongst members by leading with 
+                a welcoming culture from the committee and hosting social events such 
+                that students have plenty of opportunity to interact
+            </li>
+            <li class = "lead">Engagement with <b>other EMS clubs</b> via collaborative endeavours
+                and mutual support
+            </li>
+            <li class = "lead"><b>Raising awareness</b> of data science amongst the university and 
+                community
+            </li>
+            <li class = "lead">Participation in numerous <b>Guild events</b> such as Club Carnival, as 
+                well as <b>engaging the wider university community</b> with talks from industry experts,
+                forums, study nights, a networking night, workshops and social events
+            </li>
+            <li class = "lead">Engagement of <b>multiple cohorts</b> accross the university, with members
+                from the UWA business school, international students, varying age groups, postgrads 
+                and undergrads, a diverse range of ethnicities, and the LGBTQI+ community
+            </li>
+            <li class = "lead">Demonstration of <b>responsible event management and planning</b></li>
+            <li class = "lead">Attendance at <b>SOC meetings</b> and compliance with other Guild 
+                standards and procedures
+            </li>
+            <li class = "lead">Accumulation of noteable <b>sponsors</b> including Visagio full-time, and 
+                Quantum Black, Hayes and Rio Tinto for specific events
+            </li>
+            <li class = "lead">Multiple <b>sold out</b> club events</li>
+        </ul>
+    </div>
+
+    <div class = "col-xs-12 col-xl-4 text-center">
+        <img src = "{{ url_for('static', filename='images/bestnewclub.jpg') }}" class = "img-fluid">
+    </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data Science Club of UWA</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel = "stylesheet" href = "{{ url_for('static', filename='stylesheet.css') }}">
+	<link rel = "icon" href = "{{ url_for('static', filename='images/icon.png') }}">
+</head>
+<body>
+
+<!--navbar-->
+<nav class = "navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class = "container-fluid">
+        <a class = "navbar-brand">
+			<img src = "{{ url_for('static', filename='images/logo_w.png') }}" class = "image-logo" href = "{{ url_for('index') }}">
+		</a>
+		<button class= "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+			<span class = "navbar-toggler-icon"></span>
+		</button>
+		<div class = "collapse navbar-collapse" id = "navbarResponsive">
+			<ul class = "navbar-nav ml-auto">
+				<li class = "nav-item">
+					<a class = "nav-link" href = "{{ url_for('index') }}">Home</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" href = "{{ url_for('about') }}">About DSC</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" href = "{{ url_for('events') }}">Events</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" href = "https://docs.google.com/forms/d/e/1FAIpQLSedM0qakuHdaEOLoE72LabSwXyFZkSmxP8pCLxPpOQkSaPf5A/formResponse" target="_blank">Membership</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" href = "{{ url_for('contact') }}">Contact</a>
+				</li>
+			</ul>
+		</div>
+		
+    </div>
+</nav>
+
+<!--other content-->
+{% block content %}{% endblock %}
+
+<!--footer-->
+<footer>
+	<div class = "container-fluid padding">
+		<div class = "row text-center">
+			<div class = "col-md-4 align-self-center">
+				<img src = "{{ url_for('static', filename='images/logo_w.png') }}" class = "image-logo-large">
+			</div>
+			<div class = "col-md-4">
+				<hr class = "light">
+				<h5>Contact Details</h5>
+				<hr class = "light">
+				<p href = "mailto: dsc.uwa@gmail.com">dsc@gmail.com</p>
+				<p href = "https://www.facebook.com/dsc.uwa">https://www.facebook.com/dsc.uwa</p>
+				<p href = "https://www.linkedin.com/company/dscuwa">https://www.linkedin.com/company/dscuwa</p>
+			</div>
+			<div class = "col-md-4">
+				<hr class = "light">
+				<h5>UWA EMS Office</h5>
+				<hr class = "light">
+				<p href = "mailto: enquiries-ems@uwa.edu.au">enquiries-ems@uwa.edu.au</p>
+				<p href="tel:6488 3061">(+61 8) 6488 3061</p>
+				<p>The University of Western Australia</p>
+				<p>35 Stirling Hwy, Crawley, Perth, WA</p>
+			</div>
+			<div class="col-12">
+				<hr class = "light-100">
+				<h5>&copy; www.dsc.asn.au</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
